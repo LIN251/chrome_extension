@@ -22,9 +22,9 @@ function ProductForm() {
       <ul>
         {products.map((product) => (
           <li key={product.name}>
-            <div>Name: {product.name}</div>
-            <div>Price: {product.price}</div>
-            <div>Sales: {product.sales}</div>
+            <div>Product Name: {product.name}</div>
+            <div>Product Price: {product.price}</div>
+            <div>Remaining: {product.sales}</div>
           </li>
         ))}
       </ul>

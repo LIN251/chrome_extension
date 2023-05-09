@@ -87,15 +87,15 @@ function ProductAddForm() {
       <h2>Add Product</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Name:</label>
+          <label>Product Name:</label>
           <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
         </div>
         <div>
-          <label>Price:</label>
+          <label>Product Price:</label>
           <input type="number" value={price} onChange={(e) => setPrice(e.target.value)} />
         </div>
         <div>
-          <label>Sales:</label>
+          <label>Remaining:</label>
           <input type="number" value={sales} onChange={(e) => setSales(e.target.value)} />
         </div>
         <br></br>
