@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Chrome extension demo for sales management. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Load chrome extension.
+1. You can either clone the project or download the zip file.
+2. If you only want to run the extension, you'll only need the dist folder.
+3. Launch the Google Chrome browser and click on the three-dot menu icon in the top-right corner of the window.
+4. Select "More tools" from the menu, and then click on "Extensions."
+5. Enable Developer mode by toggling the switch in the top-right corner.
+6. Click on the "Load unpacked" button located in the top-left corner of the screen.
+7. Locate the dist folder in the downloaded extension file, and select it.
+8. Once the extension is loaded, its icon should appear on the toolbar.
 
-In the project directory, you can run:
+## Backend info;
+1. The backend for this extension utilizes Firestore.
+2. All data is stored within Firestore.
+3. Since this is a demonstration, there are currently no security restrictions or login verification in place. The API interface is publicly accessible within the file, but these settings can be modified as needed.
 
-### `npm start`
+## Extension datails
+### Product pages
+1. This page displays a comprehensive list of all available products.
+2. Additionally, there is a feedback section where customers can submit their feedback directly to the sales team.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Sales pages
+1. This page enables salespeople to publish additional products to the product page.
+2. The page also contains a feedback list that includes all relevant information, such as customer information and the time stamp of each feedback submission.
+3. Salespeople can reply to feedback by clicking on the reply button, which creates a new entry indicating that the feedback has been replied to.
+4. Currently, no email notifications are sent, but all replies are recorded in Firebase and will automatically show in the sales sections. Email replies may be added in the future if necessary.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### Tech stack
+1. React, Js, chrome
+2. Firebase
+3. Webpack
+4. Html, css
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

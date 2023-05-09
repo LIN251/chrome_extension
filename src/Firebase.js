@@ -1,6 +1,7 @@
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 
+// connect to firebase database 
 const firebaseConfig = {
     apiKey: "AIzaSyCejG6BEIdU1ElteQSCmDakR3jrSygxFBg",
     authDomain: "impact-extension.firebaseapp.com",

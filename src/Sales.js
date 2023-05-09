@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { db } from './Firebase';
 import ReplyForm from './ReplyForm';
 
+// show feedback list with timestamps.
 function FeedbackList() {
   const [feedbacks, setFeedbacks] = useState([]);
   const [showReplyForm, setShowReplyForm] = useState(false);
@@ -61,10 +62,7 @@ function FeedbackList() {
 }
 
 
-
-
-
-
+// allow sales to add porducts.
 function ProductAddForm() {
   const [name, setName] = useState('');
   const [price, setPrice] = useState('');
@@ -107,10 +105,11 @@ function ProductAddForm() {
   );
 }
 
+// manage sales page.
 function Manager() {
   return (
     <div>
-      <h1>Manager Section</h1>
+      <h1>Sales Section</h1>
       <ProductAddForm />
       <FeedbackList />
     </div>

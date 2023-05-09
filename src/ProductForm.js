@@ -4,18 +4,20 @@ import { db } from './Firebase';
 function ProductForm() {
   const [products, setProducts] = useState([]);
 
+  // fatch all products from firebase.
   useEffect(() => {
-    const unsubscribe = db.collection('products').onSnapshot((snapshot) => {
+    const info = db.collection('products').onSnapshot((snapshot) => {
       const data = snapshot.docs.map((doc) => doc.data());
       setProducts(data);
     });
 
-    return unsubscribe;
+    return info;
   }, []);
 
+  // show all products.
   return (
     <div>
-      <h1>Sales Page</h1>
+      <h1>Product Page</h1>
       <h2>Product List</h2>
       <ul>
         {products.map((product) => (

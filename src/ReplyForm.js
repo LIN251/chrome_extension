@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { db } from './Firebase';
 
 
-
+//Update the reply and replied field. 
 function ReplyForm({ feedback, onClose }) {
   const [reply, setReply] = useState('');
 
@@ -18,6 +18,7 @@ function ReplyForm({ feedback, onClose }) {
     onClose();
   };
 
+  //popup window for replying a feedback
   return (
     <div>
       <h2>Reply to Feedback</h2>

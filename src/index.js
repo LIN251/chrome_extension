@@ -5,9 +5,10 @@ import reportWebVitals from './reportWebVitals';
 
 import ProductForm from './ProductForm';
 import FeedbackForm from './Feedback';
-import Manager from './Manager';
+import SalesForm from './Sales';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+//render form
 root.render(
   <div>
     <ProductForm />    
@@ -15,7 +16,7 @@ root.render(
     <br />
     <hr />
     <hr />
-    <Manager />
+    <SalesForm />
   </div>,
 );
 

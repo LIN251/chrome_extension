@@ -7,6 +7,7 @@ function FeedbackForm() {
   const [phone, setPhone] = useState('');
   const [feedback, setFeedback] = useState('');
 
+  // get feedback and add into firebase
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -25,6 +26,8 @@ function FeedbackForm() {
     setFeedback('');
   };
 
+  // create a feedback form
+  //get all typed info when the customer submited.  
   return (
     <div>
       <h2>Feedback Form</h2>
