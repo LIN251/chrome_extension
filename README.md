@@ -21,6 +21,10 @@
 1. This page displays a comprehensive list of all available products.
 2. Additionally, there is a feedback section where customers can submit their feedback directly to the sales team.
 
+
+![Product page](https://github.com/LIN251/chrome_extension/READMEIMG/../../../../../README_IMG/product.jpg)
+
+
 ### Sales pages
 1. Salespeople can use this page to add new products to the product page.
 2. The page includes a feedback list that provides customer information and a time stamp for each feedback submission.
@@ -28,6 +32,9 @@
 4. A new entry will be created to indicate that the feedback has been replied to.
 5. Firebase will be notified and update the corresponding value in the "replied" section.
 6. Although no email notifications are currently sent, all reply data is recorded in Firebase and will automatically show in the sales section. Email replies may be added in the future, if necessary.
+
+
+![sales page](https://github.com/LIN251/chrome_extension/READMEIMG/../../../../../README_IMG/sales.jpg)
 
 ### Tech stack
 1. React, Js, chrome
