@@ -22,7 +22,7 @@
 2. Additionally, there is a feedback section where customers can submit their feedback directly to the sales team.
 
 
-![Product page](https://github.com/LIN251/chrome_extension/READMEIMG/../../../../../README_IMG/product.jpg)
+![Product page](./README_IMG/product.jpg)
 
 
 ### Sales pages
@@ -34,7 +34,7 @@
 6. Although no email notifications are currently sent, all reply data is recorded in Firebase and will automatically show in the sales section. Email replies may be added in the future, if necessary.
 
 
-![sales page](https://github.com/LIN251/chrome_extension/READMEIMG/../../../../../README_IMG/sales.jpg)
+![sales page](./README_IMG/sales.jpg)
 
 ### Tech stack
 1. React, Js, chrome
