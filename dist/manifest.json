@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Extension Demo",
+  "description": "A simple Chrome extension that can be used by sales, marketing, or customer service teams. ",
+  "version": "1.0",
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_title": "Chrome Extension",
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js",
+        "https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self' https://www.gstatic.com/firebasejs/ http://localhost:* http://127.0.0.1:*;"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "identity"
+  ]
+}
